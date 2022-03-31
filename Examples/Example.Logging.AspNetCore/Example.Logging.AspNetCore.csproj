@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\RockLib.Logging.AspNetCore\RockLib.Logging.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\RockLib.Logging.Microsoft.Extensions\RockLib.Logging.Microsoft.Extensions.csproj" />
   </ItemGroup>
 
 
