@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netstandard2.0;net462</TargetFrameworks>
+    <TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
     <RootNamespace>RockLib.Logging</RootNamespace>
   </PropertyGroup>
 
@@ -50,7 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RockLib.Logging" Version="3.0.8" />
+    <ProjectReference Include="..\RockLib.Logging\RockLib.Logging.csproj" />
   </ItemGroup>
 
 </Project>

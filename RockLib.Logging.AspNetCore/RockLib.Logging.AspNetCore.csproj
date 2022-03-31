@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netstandard2.0;net462</TargetFrameworks>
+    <TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -41,8 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RockLib.DistributedTracing.AspNetCore" Version="1.0.2" />
-    <PackageReference Include="RockLib.Logging" Version="3.0.8" />    
+    <PackageReference Include="RockLib.DistributedTracing.AspNetCore" Version="1.0.2" />    
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='net5.0'">
@@ -52,6 +51,10 @@
   <ItemGroup Condition="'$(TargetFramework)'!='net5.0'">
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RockLib.Logging\RockLib.Logging.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RockLib.Logging.AspNetCore" Version="3.2.0" />
+    <ProjectReference Include="..\..\RockLib.Logging.AspNetCore\RockLib.Logging.AspNetCore.csproj" />
   </ItemGroup>
 
 
